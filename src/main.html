@@ -13,15 +13,60 @@
 
 </head>
 <body>
-    <header class="pb-4 border-b flex-center">
-        <section class="container mx-4 mt-3 border-gray-100 rounded-sm flex-center">
+    <header class="pt-3 pb-4 border-b flex-center lg:space-x-8 lg:space-x-reverse xl:space-x-12 xl:space-x-reverse">
+        <!-- logo -->
+        <section class="hidden lg:flex">
+            <img class="w-14 h-14" src="images/logo.png" alt="">
+        </section>
+        <!-- location -->
+        <section class="hidden lg:flex">
+            <button class="space-x-3 space-x-reverse flex-center">
+                <i class="text-xl text-gray-500 fa fa-map-marker"></i>
+                <p>تهران</p>
+            </button>
+        </section>
+        <!-- category -->
+        <section class="hidden lg:flex">
+            <button class="space-x-3 space-x-reverse flex-center">
+                <p>دسته ها</p>
+                <i class="text-xl text-gray-500 fa fa-angle-down"></i>
+            </button>
+        </section>
+        <!-- search -->
+        <section class="container mx-4 border-gray-100 rounded-sm flex-center lg:mx-0 lg:w-2/6">
             <input type="text" placeholder="&#xf002 جستوجو در همه آگهی ها"
-                   class="border-l border-gray-300 w-5/6 lg:w-1/2 py-1 my-2 ps-2 fa bg-gray-100
+                   class="border-l lg:border-l-0 border-gray-300 w-5/6 py-1 my-2 ps-2 fa bg-gray-100
                placeholder:text-lg placeholder:text-gray-400 lg:w-[94%]">
-            <div class="mx-1 flex-center space-x-2 space-x-reverse lg:w-[6%]">
+            <div class="mx-1 space-x-2 space-x-reverse flex-center lg:hidden">
                 <button class="text-gray-500">تهران</button>
                 <i class="text-xl text-gray-500 fa fa-map-marker"></i>
             </div>
+        </section>
+         <!-- my divar -->
+         <section class="hidden text-gray-500 lg:flex">
+            <button class="space-x-3 space-x-reverse flex-center">
+                <i class="text-xl text-gray-500 fa fa-user"></i>
+                <p class="text-xs">دیوار من</p>
+            </button>
+        </section>
+         <!-- chat -->
+         <section class="hidden text-gray-500 lg:flex">
+            <button class="space-x-3 space-x-reverse flex-center">
+                <i class="text-xl text-gray-500 fa fa-comment"></i>
+                <p class="text-xs">چت</p>
+            </button>
+        </section>
+         <!-- support -->
+         <section class="hidden text-gray-500 lg:flex">
+            <button class="space-x-3 space-x-reverse flex-center">
+                <p class="text-xs">پشتیبانی</p>
+            </button>
+        </section>
+         <!-- advertise -->
+         <section class="hidden text-gray-500 lg:flex">
+            <button class="px-5 py-2 font-bold text-white bg-red-600 rounded flex-center">
+                ثبت آگهی
+            </button>
         </section>
     </header>
     <main>
