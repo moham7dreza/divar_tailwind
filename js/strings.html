@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let string =
+        "qdwqdqdwqdqdqwf qfqwf wef wfwef wfw fw fwef wef wf wefwfwef w ef";
+      console.log(string.replaceAll("we", "ii"));
+
+      let url = "admin/category   ";
+      console.log(url.trim());
+      console.log(url.trimEnd());
+      console.log(url.trimStart());
+      // convert string to array
+      console.log(url.trim().split("/"));
+
+      // usage in card numbers or ...
+      console.log(url.padStart(20, "*"));
+      console.log(url.padEnd(20, "*"));
+
+      const colors = ["red", "blue"];
+    </script>
+  </body>
+</html>
