@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 1;
+      let b = 2;
+      let res = a++ * b++;
+      console.log(a, b, res);
+      res = ++a * ++b;
+      console.log(a, b, res);
+
+      // check ascii code h=68 > a=61
+      console.log("hassan" > "ali");
+      // check for char, if same sec char and so
+      console.log("amir" > "ali");
+
+      <!-- only check values -->
+      console.log(false == 0);
+      console.log(true == 1);
+      console.log(true == "1");
+      console.log(null == undefined);
+
+      // and : search for false values to return false for all expression
+      // or : search for true values to return true for all expression
+      // and has high priority
+      // parantes has higher priority
+      console.log(false || true);
+      console.log((false || true) && true);
+    </script>
+  </body>
+</html>
